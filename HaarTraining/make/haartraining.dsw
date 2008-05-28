@@ -1,0 +1,152 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "createsamples"=.\createsamples.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name cvhaartraining
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name cv
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name cxcore
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name highgui
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "cv"=..\..\..\cv\src\cv.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name cxcore
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "cvhaartraining"=.\cvhaartraining.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name cv
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name highgui
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name cxcore
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "cxcore"=..\..\..\cxcore\src\cxcore.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "haartraining"=.\haartraining.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name cvhaartraining
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name cv
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name cxcore
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name highgui
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "highgui"=..\..\..\otherlibs\highgui\highgui.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name cxcore
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "performance"=.\performance.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name cv
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name cvhaartraining
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name cxcore
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name highgui
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+
