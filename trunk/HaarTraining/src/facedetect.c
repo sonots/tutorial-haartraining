@@ -48,7 +48,7 @@ int main( int argc, char** argv )
                  "  [ -ms < min_size = %d %d > ]\n"
                  "  [ filename | camera_index = %s ]\n",
                  scale_factor, min_neighbors, flags, min_size.width, min_size.height, input_name );
-        fprintf( stderr, "SEE: cvHaarDetectObjects() about option parameters.\n" );
+        fprintf( stderr, "See also: cvHaarDetectObjects() about option parameters.\n" );
         return -1;
     }
 
