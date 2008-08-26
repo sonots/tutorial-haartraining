@@ -1,0 +1,6 @@
+# Increase number of samples to 10000
+my $cmd = './createsamples -w 18 -h 20 -maxxangle 0.05 -maxyangle 0.05 -maxzangle 0.05 -maxidev 10 -bgcolor 0 -bgthresh 0';
+my $totalnum = 10000;
+my $cmd = './createsamples -maxxangle 0.05 -maxyangle 0.05 -maxzangle 0.05 -maxidev 10 -bgcolor 0 -bgthresh 0 ';
+./haartraining -data cascade -vec samples.vec -bg negatives.dat -nstages 20 -nsplits 2 -minhitrate 0.999 -maxfalsealarm 0.5 -npos 10000 -neg `cat negatives.dat | wc -l` -w 18 -h 20 -nonsym -mem 500 -mode ALL
+./performance -data cascade.xml -info tests.dat -ni -w 18 -h 20
