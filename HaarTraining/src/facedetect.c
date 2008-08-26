@@ -18,7 +18,8 @@
 static CvMemStorage* storage = 0;
 static CvHaarClassifierCascade* cascade = 0;
 
-void detect_and_draw( IplImage* image );
+void detect_and_draw( IplImage* img, double scale_factor = 1.1, int min_neighbors = 1,
+                      int flags = 0/*CV_HAAR_DO_CANNY_PRUNING*/, CvSize min_size = cvSize(0,0) );
 
 const char* cascade_name =
     "haarcascade_frontalface_alt.xml";
@@ -29,28 +30,62 @@ int main( int argc, char** argv )
     CvCapture* capture = 0;
     IplImage *frame, *frame_copy = 0;
     int optlen = strlen("--cascade=");
-    const char* input_name;
+    const char* input_name = "0";
+    int i;
+    double scale_factor = 1.1;
+    int min_neighbors = 1;
+    int flags = 0;/*CV_HAAR_DO_CANNY_PRUNING*/
+    CvSize min_size = cvSize(0,0);
 
-    if( argc > 1 && strncmp( argv[1], "--cascade=", optlen ) == 0 )
-    {
-        cascade_name = argv[1] + optlen;
-        input_name = argc > 2 ? argv[2] : 0;
-    }
-    else
-    {
-        cascade_name = "../../data/haarcascades/haarcascade_frontalface_alt2.xml";
-        input_name = argc > 1 ? argv[1] : 0;
-    }
-
-    cascade = (CvHaarClassifierCascade*)cvLoad( cascade_name, 0, 0, 0 );
-    
-    if( !cascade )
+    if( argc == 1 )
     {
         fprintf( stderr, "ERROR: Could not load classifier cascade\n" );
         fprintf( stderr,
-        "Usage: facedetect --cascade=\"<cascade_path>\" [filename|camera_index]\n" );
+                 "Usage: facedetect  "
+                 "--cascade=\"<cascade_xml_path>\" or -c <cascade_xml_path>\n"
+                 "  [ -sf < scale_factor = %f > ]\n"
+                 "  [ -mn < min_neighbors = %d > ]\n"
+                 "  [ -fl < flags = %d > ]\n"
+                 "  [ -ms < min_size = %d %d > ]\n"
+                 "  [ filename | camera_index = %s ]\n",
+                 scale_factor, min_neighbors, flags, min_size.width, min_size.height, input_name );
+        fprintf( stderr, "SEE: cvHaarDetectObjects() about option parameters.\n" );
         return -1;
     }
+
+    for( i = 1; i < argc; i++ )
+    {
+        if( !strncmp( argv[i], "--cascade=", optlen ) )
+        {
+            cascade_name = argv[++i] + optlen;
+        }
+        else if( !strcmp( argv[i], "-c" ) )
+        {
+            cascade_name = argv[++i];
+        }
+        else if( !strcmp( argv[i], "-sf" ) )
+        {
+            scale_factor = (float) atof( argv[++i] );
+        }
+        else if( !strcmp( argv[i], "-mn" ) )
+        {
+            min_neighbors = atoi( argv[++i] );
+        }
+        else if( !strcmp( argv[i], "-fl" ) )
+        {
+            flags = CV_HAAR_DO_CANNY_PRUNING;
+        }
+        else if( !strcmp( argv[i], "-ms" ) )
+        {
+            min_size = cvSize( atoi( argv[++i] ), atoi( argv[++i] ) );
+        }
+    else 
+    {
+        input_name = argv[i];
+    }
+    }
+
+    cascade = (CvHaarClassifierCascade*)cvLoad( cascade_name, 0, 0, 0 );
     storage = cvCreateMemStorage(0);
     
     if( !input_name || (isdigit(input_name[0]) && input_name[1] == '\0') )
@@ -77,7 +112,7 @@ int main( int argc, char** argv )
             else
                 cvFlip( frame, frame_copy, 0 );
             
-            detect_and_draw( frame_copy );
+            detect_and_draw( frame_copy, scale_factor, min_neighbors, flags, min_size );
 
             if( cvWaitKey( 10 ) >= 0 )
                 break;
@@ -114,7 +149,7 @@ int main( int argc, char** argv )
                     image = cvLoadImage( buf, 1 );
                     if( image )
                     {
-                        detect_and_draw( image );
+                        detect_and_draw( image, scale_factor, min_neighbors, flags, min_size );
                         cvWaitKey(0);
                         cvReleaseImage( &image );
                     }
@@ -130,7 +165,7 @@ int main( int argc, char** argv )
     return 0;
 }
 
-void detect_and_draw( IplImage* img )
+void detect_and_draw( IplImage* img, double scale_factor, int min_neighbors, int flags, CvSize min_size )
 {
     static CvScalar colors[] = 
     {
@@ -147,8 +182,7 @@ void detect_and_draw( IplImage* img )
     double scale = 1.3;
     IplImage* gray = cvCreateImage( cvSize(img->width,img->height), 8, 1 );
     IplImage* small_img = cvCreateImage( cvSize( cvRound (img->width/scale),
-                         cvRound (img->height/scale)),
-                     8, 1 );
+                         cvRound (img->height/scale)), 8, 1 );
     int i;
 
     cvCvtColor( img, gray, CV_BGR2GRAY );
@@ -159,9 +193,9 @@ void detect_and_draw( IplImage* img )
     if( cascade )
     {
         double t = (double)cvGetTickCount();
-        CvSeq* faces = cvHaarDetectObjects( small_img, cascade, storage,
-                                            1.1, 2, 0/*CV_HAAR_DO_CANNY_PRUNING*/,
-                                            cvSize(30, 30) );
+        CvSeq* faces = cvHaarDetectObjects( small_img, cascade, storage, 
+                                            scale_factor, min_neighbors, flags, min_size );
+                                            //1.1, 2, 0/*CV_HAAR_DO_CANNY_PRUNING*/, cvSize(30, 30) );
         t = (double)cvGetTickCount() - t;
         printf( "detection time = %gms\n", t/((double)cvGetTickFrequency()*1000.) );
         for( i = 0; i < (faces ? faces->total : 0); i++ )
