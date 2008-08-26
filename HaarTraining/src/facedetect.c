@@ -78,10 +78,10 @@ int main( int argc, char** argv )
         {
             min_size = cvSize( atoi( argv[++i] ), atoi( argv[++i] ) );
         }
-    else 
-    {
-        input_name = argv[i];
-    }
+        else 
+        {
+            input_name = argv[i];
+        }
     }
 
     cascade = (CvHaarClassifierCascade*)cvLoad( cascade_name, 0, 0, 0 );
