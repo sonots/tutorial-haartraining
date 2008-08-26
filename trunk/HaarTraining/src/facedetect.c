@@ -18,8 +18,7 @@
 static CvMemStorage* storage = 0;
 static CvHaarClassifierCascade* cascade = 0;
 
-void detect_and_draw( IplImage* img, double scale_factor = 1.1, int min_neighbors = 1,
-                      int flags = 0/*CV_HAAR_DO_CANNY_PRUNING*/, CvSize min_size = cvSize(0,0) );
+void detect_and_draw( IplImage* img, double scale_factor, int min_neighbors, int flags, CvSize min_size );
 
 const char* cascade_name =
     "haarcascade_frontalface_alt.xml";
@@ -128,7 +127,7 @@ int main( int argc, char** argv )
 
         if( image )
         {
-            detect_and_draw( image );
+            detect_and_draw( image, scale_factor, min_neighbors, flags, min_size );
             cvWaitKey(0);
             cvReleaseImage( &image );
         }
