@@ -37,7 +37,7 @@ void icvAppendVec( CvVecFile &in, CvVecFile &out, int *showsamples, int winheigh
 		{
 			sample = cvCreateMat( in.vecsize, 1, CV_8UC1 );
 		}
-		for(int i = 0; i < in.count; i++ )
+		for( int i = 0; i < in.count; i++ )
 		{
 			icvGetHaarTraininDataFromVecCallback( sample, &in );
 			icvWriteVecSample ( out.input, sample );
@@ -85,7 +85,8 @@ void icvMergeVecs( char* infoname, const char* vecfilename, int showsamples, int
 	outvec.count = 0;
 	for ( filenum = 0; ; filenum++ )
 	{
-		if (fscanf( info, "%s", filename ) == EOF) {
+		if ( fscanf( info, "%s", filename ) == EOF )
+        {
 			break;
 		}
 		invec.input = fopen( filename, "rb" );
@@ -100,7 +101,7 @@ void icvMergeVecs( char* infoname, const char* vecfilename, int showsamples, int
 		fread( &tmp, sizeof( tmp ), 1, invec.input );
 
 		outvec.count += invec.count;
-		if(i > 0 &&  invec.vecsize != prev_vecsize )
+		if( i > 0 &&  invec.vecsize != prev_vecsize )
 		{
 			fprintf( stderr, "The size of images in %s(%d) is different with the previous vec file(%d).\n", filename, invec.vecsize, prev_vecsize );
 			exit(1);
@@ -131,7 +132,7 @@ void icvMergeVecs( char* infoname, const char* vecfilename, int showsamples, int
 	fclose( outvec.input );
 }
 
-int main(int argc, char **argv) 
+int main( int argc, char **argv ) 
 {
 	int i,j = 0;
 	char *infoname = NULL;
