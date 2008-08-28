@@ -2,7 +2,7 @@ Thanks!
 [1] Negative Images
 URL: http://face.urtho.net/
 [2] The UMIST Face Database
-License: free for research use
+License: See license/umist.html
 URL: http://images.ee.umist.ac.uk/danny/database.html
 Cite:
 Daniel B Graham and Nigel M Allinson. Face Recognition: From Theory to Applications, NATO ASI Series F, Computer and Systems Sciences, Vol. 163. H. Wechsler, P. J. Phillips, V. Bruce, F. Fogelman-Soulie and T. S. Huang (eds), pp 446-456, 1998.
