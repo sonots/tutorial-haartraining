@@ -5,32 +5,21 @@
 #include <math.h>
 
 #include <cvhaartraining.h>
-#include <_cvhaartraining.h> // CvVecFile
-#include <string> // use string for easiness
-using namespace std;
-
-// *.vec -> *_015.png
-string outputfilename( const char* outdir, const char* vec, int id )
-{
-	char no[3];
-	string outfile = string( outdir ) + "/" + string( vec );
-	outfile.erase(outfile.size()-4, 4); // erase .vec
-	sprintf(no, "%03d", id);
-	outfile = outfile + "_" + no + ".png";
-	return outfile;
-}
+#include <_cvhaartraining.h> // Load CvVecFile
+void icvVec2Img( const char* vecname, const char* outformat, int width, int height );
 
 // Extract images from a vec file
-void icvVec2Img( const char* vecname, const char* outdir, int width, int height )
+void icvVec2Img( const char* vecname, const char* outformat, int width, int height )
 {
 	CvVecFile vec;
 	CvMat* sample;
-	string outputfile;
+	char outfilename[PATH_MAX];
 	short tmp;
+
 	vec.input = fopen( vecname, "rb" );
 	if ( vec.input == NULL )
 	{
-		fprintf( stderr, "Input file %s does not exist or not readable\n", vecname);
+        fprintf( stderr, "ERROR: Input file %s does not exist or not readable.\n", vecname);
 		exit(1);
 	}
 	fread( &vec.count, sizeof( vec.count ), 1, vec.input );
@@ -44,16 +33,18 @@ void icvVec2Img( const char* vecname, const char* outdir, int width, int height 
 		vec.vector = (short*) cvAlloc( sizeof( *vec.vector ) * vec.vecsize );
 		if( vec.vecsize != width * height )
 		{
-			fprintf( stderr, "The size of images inside of vec files does not match with %d x %d, but %d\n", height, width, vec.vecsize );
+            fprintf( stderr, "ERROR: The size of images inside of vec files does not match with %d x %d, but %d. \n", height, width, vec.vecsize );
 			exit(1);
 		}
 		sample = cvCreateMat( height, width, CV_8UC1 );
-		for(int i = 0; i < vec.count; i++ )
+        //cvNamedWindow( "Sample", CV_WINDOW_AUTOSIZE );
+		for( int i = 0; i < vec.count; i++ )
 		{
 			icvGetHaarTraininDataFromVecCallback( sample, &vec );
-			outputfile = outputfilename( outdir, vecname, i+1 );
-			printf( "%s\n", outputfile.c_str() );
-			cvSaveImage(outputfile.c_str(),  sample);
+            sprintf( outfilename, outformat, i + 1 );
+			printf( "%s\n", outfilename );
+			cvSaveImage( outfilename, sample );
+            //cvShowImage( "Sample", sample ); cvWaitKey( 0 );
 		}
 		cvReleaseMat( &sample );
 		cvFree( (void**) &vec.vector );
@@ -62,19 +53,20 @@ void icvVec2Img( const char* vecname, const char* outdir, int width, int height 
 }
 
 int main(int argc, char **argv){
-	char *vecname = NULL;
-	char *outdir  = NULL;
-	int width     = 24;
-	int height    = 24;
-	int i, j      = 0;
+	char *vecname   = NULL;
+	char *outformat = NULL;
+	int width       = 24;
+	int height      = 24;
+	int i           = 0;
 
 	if( argc == 1 )
 	{
-		printf( "Usage: %s\n  <input_vec_file_name>\n"
-			"  <img_output_dir = %s>\n"
-			"  [-w <sample_width = %d>] [-h <sample_height = %d>]\n"
-			"Output Files: <img_output_dir>/<input_vec_file_name>_<num>.png",
-			argv[0], ".", width, height );
+		printf( "Usage: %s\n  <input_vec_filename>\n"
+			"  <output_filename_format>\n"
+			"  [-w <sample_width = %d>] [-h <sample_height = %d>]\n",
+			argv[0], width, height );
+        printf( "The output filename format is a string having one %%d such as 'samples%%04d.png'.\n"
+            "The image file format is automatically determined by the extension.\n" );
 		return 0;
 	}
 	for( i = 1; i < argc; ++i )
@@ -87,29 +79,25 @@ int main(int argc, char **argv){
 		{
 			height = atoi( argv[++i] );
 		} 
-		else
-		{
-			if ( j == 0 )
-			{
-				vecname = argv[i];
-			}
-			else
-			{
-				outdir = argv[i];
-			}
-			j++;
-		}
+		else if( vecname == NULL )
+        {
+            vecname = argv[i];
+        }
+        else if( outformat == NULL )
+        {
+            outformat = argv[i];
+        }
 	}
 	if ( vecname == NULL )
 	{
-		fprintf( stderr, "No input vec file\n" );
+        fprintf( stderr, "ERROR: No input vec file. \n" );
 		exit(1);
 	}
-	if ( outdir == NULL )
+	if ( outformat == NULL )
 	{
-		outdir = (char *)malloc(sizeof(char) * 2);
-		outdir = ".\0";
+        fprintf( stderr, "ERROR: Not output filename format. \n" );
+        exit(1);
 	}
-	icvVec2Img( vecname, outdir, width, height );
+	icvVec2Img( vecname, outformat, width, height );
 	return 0;
 }
