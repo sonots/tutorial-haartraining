@@ -1,0 +1,399 @@
+<html><head>
+
+  <title>IIT-NRC: acial Video Database</title>
+  <meta name="description" content="Perceptual Vision tehcnology at the National Research Council">
+  <meta name="keywords" content="face tracking, feature tracking, perceptual interfaces, face recognition, 
+face detection, facial feature,  hands free, neural network, NRC, machine learning, computer vision, 3D face, CV, IIT, NRC">
+
+<link rel="StyleSheet" href="NRC-IITFacialVideo_files/main.htm" type="text/css">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style>
+<!-
+a:active { font-weight: bold; text-decoration: underline }
+A:visited { font-weight: bold; color:#993300; text-decoration: none;}
+A:link { font-weight: bold; color:#12522E; text-decoration: none;}
+A:hover { color:#12522E; text-decoration: underline;}
+A:border { border: 1px solid black; }
+->
+  </style> 
+</head><body bgcolor="#ffffff">
+
+<table border="0" cellpadding="0" cellspacing="0" width="750">
+    <tbody><tr><td>
+ <p align="right">
+
+      <img src="NRC-IITFacialVideo_files/nrc-iit-logo.gif" alt="NRC-IIT - Institute for Information Technology" align="left" width="150" height="74"> 
+      <b><font color="#000080" size="6">NRC-IIT Facial Video Database</font></b></p>  
+ 
+ <p align="right">
+
+     <a href="http://www.nrc-cnrc.gc.ca/">NRC-CNRC</a> |                                   
+     <a href="http://iit-iti.nrc-cnrc.gc.ca/">IIT-ITI</a> |                                    
+     <a href="http://iit-iti.nrc-cnrc.gc.ca/projects-projets/nouse_e.html">CV Group</a> |                                  
+     <a href="http://www.perceptual-vision.com/">Perceptual  Vision TechSite<br> 
+     </a>     
+     &nbsp; <a href="http://www.perceptual-vision.com/memory/">FRiV      
+technology</a>  | <a href="http://www.perceptual-vision.com/db/video/faces/cvglab/pinn">Associative Neural           
+     Networks&nbsp;</a>|   
+   <a href="http://www.perceptual-vision.com/db/video/faces/doc">Publications</a>&nbsp;  <br>
+ <img src="NRC-IITFacialVideo_files/sidenav_line.gif" width="100%" height="1">         
+
+<!------------------------------------------------ end of header --------------------------------------------------------------------------->                                 
+
+
+
+
+</p><p align="left"> <b>Location:</b> <a href="http://www.perceptual-vision.com/db/video/faces/cvglab">/db/video/faces/cvglab</a>&nbsp;<b><br>       
+<br>
+User agreement:</b>&nbsp;&nbsp;The data from this database is freely granted for research use, provided the       
+reference for one of the following papers is given.</p>       
+ <ul>
+  <li>
+    <p><font size="2">Dmitry O. Gorodnichy&nbsp;&nbsp;</font><b><font size="3">Video-based      
+    framework for face recognition in video.</font></b><b><font size="3">&nbsp;</font></b><font size="2"><br>     
+    Second Workshop on Face Processing in Video (FPiV'05) in Proceedings of      
+    Second Canadian Conference on Computer and Robot Vision (CRV'05), pp.      
+    330-338, Victoria, BC, Canada, 9-11 May, 2005. ISBN 0-7695-2319-6. <font color="#ff0000">NRC      
+    48216.&nbsp;</font>&nbsp;[<a href="http://iit-iti.nrc-cnrc.gc.ca/publications/nrc-48216_e.html">Abstract 
+    &amp; Pdf</a>]&nbsp;</font></p>
+<font size="2">  </font></li><font size="2"><li>
+    <p>Dmitry O. Gorodnichy,&nbsp;<b><font size="3">Associative neural networks      
+    as means for low-resolution video-based recognition</font></b>.&nbsp;<br>
+    International Joint Conference on Neural Networks (IJCNN'05), Montreal,      
+    Quebec, Canada, July 31-August 4, 2005. <font color="#ff0000">NRC 48217. </font>[<a href="http://iit-iti.nrc-cnrc.gc.ca/publications/nrc-48217_e.html">Abstract      
+    &amp; Pdf</a>]&nbsp;</p>
+  </li>
+ </font></ul>
+<p align="left"><font size="2"><b>More about this research</b>: <b> <a href="http://www.perceptual-vision.com/memory/">FRiV     
+Technical
+Website</a> (</b><a href="http://www.perceptual-vision.com/memory/technology.html">publications</a>).</font></p>
+<hr>
+<p><font size="2"><b>Preface &amp; Goal</b>: This video-based face database has been       
+created&nbsp;&nbsp; in order to provide the performance evaluation criteria for       
+the techniques developed and to be developed for <i> face recognition in video       
+(FRiV)</i> and also in order to study the effect of different factors and parameters, of       
+which there many influencing the recognition performance in the long chain from       
+the capturing the video to saying a name of person in the video, on the       
+recognition performance.</font></p><font size="2">       
+</font><p><font size="2"><b>The Driving Premise</b>: With the help of this and other databases we are       
+collecting, we aim&nbsp; at showing that, as humans, computers can also       
+recognize faces in video quite adequately as long as faces have at least the       
+resolution of 12 pixels between the eyes, which we call <i>the nominal face       
+resolution</i>.</font></p>
+<p><font size="2"><b>Description:</b>&nbsp;this database contains pairs of short video clips       
+each showing a face of a computer user sitting in front of the monitor       
+exhibiting a&nbsp; wide range of facial expressions and&nbsp; orientations as       
+captured by a Intel webcam mounted on the computer monitor.&nbsp;<br>       
+The video capture resolution is kept to 160 x 120. With the face occupying 1/4       
+to 1/8 of the image (measured by width), this translates into a commonly       
+observed on a TV screen situation when a face of a TV show occupies 1/8 to 1/16       
+of the screen.</font></p><font size="2">       
+</font><p><font size="2"><b>Setup:</b> For this Database, two video clips of each person are taken one       
+after another, under approximately the same illumination conditions (no       
+sunlight, only ceiling light evenly distributed over the room), the same setup       
+and almost the same background, for all persons in the database.<br>       
+<i>This database is thus most suited for testing&nbsp; the recognition       
+performance with respect to such inherent to video-based recognition factors as:&nbsp;<br>
+- low resolution,&nbsp;&nbsp; - motion blur, -&nbsp; out-of focus
+factor,&nbsp;- facial expression variation,&nbsp; - facial orientation
+variation,-&nbsp; occlusions.</i></font></p>
+<p><font size="2">We are also in process of creating other Databases with a) the same individuals&nbsp;       
+taken in a different office (with sunlight) a few months later with the       
+same type webcam and b) the same individuals captured by a hand held VHS video       
+camera, which will be possible to use to test the recognition performance wrt to       
+illumination and hairstyle variation&nbsp; factors.&nbsp;</font></p><font size="2">       
+</font><p><font size="2"><b>Characteristics:&nbsp;</b></font></p>
+<ul>
+<font size="2">  <li><u>Resolution:</u> 160x120.&nbsp;       
+  </li><li><u>Average file size</u>: 1.5 MB&nbsp; (Video : 900 KB, Audio : 600 KB -       
+    not used )       
+  </li><li><u>Average duration:</u> 10 - 20 secs. <u>Average total number of frames
+    in a clip</u>: 300.
+  </li><li><u>Video type and compression</u>: colour AVI, 20.0 fps (unless indicated
+    otherwise). Intel webcam-provided codec compressed at 481 Kbps.</li>
+</font></ul>
+<p><font size="2"><u>Number of registered individuals</u>: 11</font></p>
+<p><font size="2"><b>Available for download:</b></font></p>
+<ul>
+<font size="2">  <li>All 11*2=22 video sequences can be downloaded as one 28MB <a href="http://www.perceptual-vision.com/db/video/faces/cvglab/avi">zip file</a>
+    or individually from <a href="http://www.perceptual-vision.com/db/video/faces/cvglab/avi">/avi</a>
+    directory or by clicking on snapshots below.
+  </li><li>Executable files developed for the project are available from
+    our <b><a href="http://www.perceptual-vision.com/memory/">FRiV Technical Website</a>.</b></li>
+  <li>Log files showing our recognition recognition results are also available. <b>See also
+    Readme for <a href="http://www.perceptual-vision.com/db/video/faces/cvglab/log/_ReadMe-results.htm">Results</a> and <a href="http://www.perceptual-vision.com/db/video/faces/cvglab/log/_ReadMe-logs.htm">Logs</a>.</b></li>
+</font></ul>
+<hr>
+<p><font size="2"><b>Snapshots and representative frame-based&nbsp; association-based recognition       
+results</b></font></p>
+<p><font size="2">In order to provide an idea of the quality/amount/uniqueness of facial data in each video pair
+(and also as a reference data for other face recognition techniques to be tested
+using this database), the <u>
+representative recognition results</u> for each person are given in the third
+column, as obtained by <a href="http://www.perceptual-vision.com/memory">our</a> technology.
+For explanation of the numbers see Remarks below.</font></p>
+<p><font size="2">Click on the snapshot to view the video.</font></p>
+<table border="1">
+  <tbody><tr>
+    <th align="center" width="31"><font size="2">ID</font></th>
+    <th align="left" width="164" nowrap="nowrap"><font size="2">clips used to&nbsp;<br>       
+ memorize a person</font></th>       
+    <th align="left" width="199" nowrap="nowrap"><font size="2">clips used to test recognition of
+      a person</font></th>
+    <th align="left" nowrap="nowrap"><font size="2"> most frequent       
+      neural outcome:&nbsp;&nbsp;</font><font size="1"> 0000000000</font><font size="2"> <br>       
+ &amp;&nbsp;recognition results</font><font size="1"> ****&nbsp;</font><font size="2">:&nbsp;       
+      </font><font size="1"><font color="#00ff00">10</font>&nbsp;| 11&nbsp;|&nbsp;<font color="#ff0000">01</font>&nbsp;(02)       
+      | 00&nbsp;&nbsp;</font>       
+    </th>
+  </tr>
+  <tr>
+    <td align="center" width="31"><font color="#ff0000">0</font></td>
+    <td width="164"><font color="#ff0000" size="2" face="Arial"><a href="http://www.perceptual-vision.com/db/video/faces/cvglab/avi/00-1.avi"><img src="NRC-IITFacialVideo_files/00-1s.gif" border="0" width="160" height="120"></a><br>
+      228. 77/121&nbsp;*</font></td>       
+    <td width="199"><font color="#ff0000" size="2" face="Arial"><a href="http://www.perceptual-vision.com/db/video/faces/cvglab/avi/00-2.avi"><img src="NRC-IITFacialVideo_files/00-2.gif" border="0" width="160" height="120"></a><br>
+      249. 131/63 *</font></td>
+    <td align="center" width="277">
+      <pre><font color="#ff0000">00000000000
+
+0 | 0 | 73 (15) | 112 </font></pre>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="31">1</td>
+    <td width="164"><font size="2" face="Arial"><a href="http://www.perceptual-vision.com/db/video/faces/cvglab/avi/02-1.avi"><img src="NRC-IITFacialVideo_files/bruno1.gif" border="0" width="160" height="120"></a>&nbsp;<br>
+      237. 96/1</font></td>       
+    <td width="199"><font size="2" face="Arial"><a href="http://www.perceptual-vision.com/db/video/faces/cvglab/avi/02-2.avi"><img src="NRC-IITFacialVideo_files/bruno2.gif" border="0" width="160" height="120"></a><br>
+      329. 54/0</font></td>
+    <td align="center" width="277">
+      <pre>01000000000
+
+<font size="2">49 | 4 | 0 | 1 </font></pre>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="31">2</td>
+    <td width="164"><font size="2" face="Arial"><a href="http://www.perceptual-vision.com/db/video/faces/cvglab/avi/02-1.avi"><img src="NRC-IITFacialVideo_files/chang1.gif" border="0" width="160" height="120"></a>&nbsp;<br>
+      257. 176/3</font></td>       
+    <td width="199"><font size="2" face="Arial"><a href="http://www.perceptual-vision.com/db/video/faces/cvglab/avi/02-2.avi"><img src="NRC-IITFacialVideo_files/chang1s.gif" border="0" width="160" height="120"></a><br>
+      339. 184/2&nbsp;</font></td>       
+    <td align="center" width="277">
+      <pre>00100000000
+
+<font size="2">175 | 0 | 3 | 8 </font></pre>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="31">3</td>
+    <td width="164"><font size="2" face="Arial"><a href="http://www.perceptual-vision.com/db/video/faces/cvglab/avi/03-1.avi"><img src="NRC-IITFacialVideo_files/dave1.gif" border="0" width="160" height="120"></a>&nbsp;<br>
+      286. 232/2</font></td>       
+    <td width="199"><font size="2" face="Arial"><a href="http://www.perceptual-vision.com/db/video/faces/cvglab/avi/03-2.avi"><img src="NRC-IITFacialVideo_files/dave1s.gif" border="0" width="160" height="120"></a><br>
+      357. 308/2</font></td>
+    <td align="center" width="277">
+      <pre>00010000000</pre>
+      <pre><font size="2">288 | 1 | 2 | 19 </font></pre>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="31">4</td>
+    <td width="164"><font size="2" face="Arial"><a href="http://www.perceptual-vision.com/db/video/faces/cvglab/avi/04-1.avi"><img src="NRC-IITFacialVideo_files/derek2.gif" border="0" width="160" height="120"></a>&nbsp;<br>
+ 353. 172/1&nbsp;</font></td>       
+    <td width="199"><font size="2" face="Arial"><a href="http://www.perceptual-vision.com/db/video/faces/cvglab/avi/04-2.avi"><img src="NRC-IITFacialVideo_files/derek2s.gif" border="0" width="160" height="120"></a><br>
+      404. 276/3</font></td>       
+    <td align="center" width="277">
+      <pre>00001000000
+
+<font size="2">163| 1 | 11 | 98</font></pre>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="31">5</td>
+    <td width="164"><font size="2" face="Arial"><a href="http://www.perceptual-vision.com/db/video/faces/cvglab/avi/05-1.avi"><img src="NRC-IITFacialVideo_files/dmitry12a.gif" border="0" width="160" height="120"></a>&nbsp;<br>
+      78. 78/0</font></td>       
+    <td width="199"><font size="2" face="Arial"><a href="http://www.perceptual-vision.com/db/video/faces/cvglab/avi/05-2.avi"><img src="NRC-IITFacialVideo_files/dmitry12.gif" border="0" width="160" height="120"></a><br>
+      128. 121/1</font></td>
+    <td align="center" width="277">
+      <pre>00000100000</pre>
+      <pre><font size="2">84 | 2 | 3 | 36 </font></pre>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="31">6</td>
+    <td width="164"><font size="2" face="Arial"><a href="http://www.perceptual-vision.com/db/video/faces/cvglab/avi/06-1.avi"><img src="NRC-IITFacialVideo_files/gerhard2.gif" border="0" width="160" height="120"></a>&nbsp;<br>
+      324. 231/10</font></td>       
+    <td width="199"><font size="2" face="Arial"><a href="http://www.perceptual-vision.com/db/video/faces/cvglab/avi/06-2.avi"><img src="NRC-IITFacialVideo_files/gerhard2s.gif" border="0" width="160" height="120"></a><br>
+      353. 237/1</font></td>
+    <td align="center" width="277">
+      <pre>000000100000</pre>
+      <pre><font size="2">202 | 2 | 3 | 15 </font></pre>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="31">7</td>
+    <td width="164"><font size="2" face="Arial"><a href="http://www.perceptual-vision.com/db/video/faces/cvglab/avi/07-1.avi"><img src="NRC-IITFacialVideo_files/mark1.gif" border="0" width="160" height="120"></a>&nbsp;<br>
+      258. 206/5&nbsp;</font></td>       
+    <td width="199"><font size="2" face="Arial"><a href="http://www.perceptual-vision.com/db/video/faces/cvglab/avi/07-2.avi"><img src="NRC-IITFacialVideo_files/mark1s.gif" border="0" width="160" height="120"></a><br>
+      328. 239/1</font></td>       
+    <td align="center" width="277">
+      <pre>000000010000</pre>
+      <pre><font size="2">208 | 3 | 12 | 17 </font></pre>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="31">8</td>
+    <td width="164"><font size="2" face="Arial"><a href="http://www.perceptual-vision.com/db/video/faces/cvglab/avi/08-1.avi"><img src="NRC-IITFacialVideo_files/stefanie1.gif" border="0" width="160" height="120"></a>&nbsp;<br>
+      346. 351/12</font></td>       
+    <td width="199"><font size="2" face="Arial"><a href="http://www.perceptual-vision.com/db/video/faces/cvglab/avi/08-2.avi"><img src="NRC-IITFacialVideo_files/stefanie1s.gif" border="0" width="160" height="120"></a><br>
+      426. 401/1&nbsp;</font></td>       
+    <td align="center" width="277">
+      <pre>000000001000</pre>
+      <pre><font size="2">353 | 3 | 8  | 38 </font></pre>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="31">9</td>
+    <td width="164"><font size="2" face="Arial"><a href="http://www.perceptual-vision.com/db/video/faces/cvglab/avi/09-1.avi"><img src="NRC-IITFacialVideo_files/gilles2.gif" border="0" width="160" height="120"></a>&nbsp;<br>
+      318. 300/1</font></td>       
+    <td width="199"><font size="2" face="Arial"><a href="http://www.perceptual-vision.com/db/video/faces/cvglab/avi/09-2.avi"><img src="NRC-IITFacialVideo_files/gilles2s.gif" border="0" width="160" height="120"></a><br>
+      388. 273/26</font></td>
+    <td align="center" width="277">
+      <pre><font size="2">191 | 8 | 30 | 62 </font></pre>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="31">10</td>
+    <td width="164"><font size="2" face="Arial"><a href="http://www.perceptual-vision.com/db/video/faces/cvglab/avi/10-1.avi"><img src="NRC-IITFacialVideo_files/10-1.gif" border="0" width="160" height="120"></a>&nbsp;<br>
+      338. 184/81</font></td>       
+    <td width="199"><font size="2" face="Arial"><a href="http://www.perceptual-vision.com/db/video/faces/cvglab/avi/10-2.avi"><img src="NRC-IITFacialVideo_files/10-1s.gif" border="0" width="160" height="120"></a><br>
+      378. 274/36</font></td>
+    <td align="center" width="277">
+      <pre>00000000001
+00000100001
+00010010000
+
+<font size="2">259 | 0 | 10 (17) | 24</font>
+</pre>
+    </td>
+  </tr>
+</tbody></table>
+
+<p>
+<font size="2"><b>Remarks:</b></font></p>
+<p>
+<font size="2"><font size="2">
+<span style="" lang="DE">The numbers below the       
+images (N.Y/Z) indicate the number of frames in clips (N) and number of those of       
+them where 1 face-looking (Y) region<span style="">&nbsp; </span>or       
+more (Z) was/were detected&nbsp; using the <span style="font-family: Times New Roman;">Haar-like       
+features filters available from </span>Intel OpenCV. </span>Note that the face       
+(or face looking region) is not detected in every frame. Also note that       
+sometimes more than one face is detected, i.e. part of a scene is erroneously       
+detected as a face. For the results presented we made sure, using video       
+processing techniques based on motion and colour tracking, that these false       
+"faces" are not taken into account.&nbsp;</font></font></p><font size="2">       
+</font><p>
+<font size="2"><font size="2">
+<font color="#ff0000">* There are many falsely
+      detected "faces" (in shelf area) in clips of ID=0. Therefore,
+      these clips are &nbsp;used to test the
+      performance on an unknown face and false "faces".</font>
+<br>
+** In some video clips&nbsp; (e.g. ID 10) "false" faces are not
+completely eliminated and/or faces show extremely challenging for
+recognition orientation, which lowers the individual-frame based
+recognition rate,<br>  
+*** The final recognition decision is not based on the  
+individual frame but on a sequence of them. Thus the actual recognition rate on  
+an entire video clip is much higher than that based on any individual frame of  
+the clip (e.g. this <a href="http://www.perceptual-vision.com/db/video/faces/cvglab/log/_111-1739-10.1%287%29-12.2%281%29-d=0.15.log">log file</a>  
+and <a href="http://www.perceptual-vision.com/db/video/faces/cvglab/log/_ReadMe-logs.htm">ReadMe-logs</a>).<br>  
+**** The numbers in third column&nbsp; show&nbsp; the <u> total number</u> of <u> single-frame based</u> (i.e.  
+image-based) results, i.e. results obtained on each individual video frame <i>without  
+taking into account the time domain</i>.&nbsp;&nbsp; For each video pair, the following following 5 statistics, indicated as S10 S11 S01 S00 and  
+S02, derived from  
+the neuro-biological associative memory based treatment of the recognition process,&nbsp; are  
+computed.</font></font></p>
+<table border="1" width="100%">
+  <tbody><tr>
+    <td valign="top" width="20%"><font size="2"><font color="#00ff00">10</font>&nbsp;-&nbsp; The numbers of frames in 2nd video  
+clip of the pair,&nbsp; when the face in a frame is associated with the correct  
+person (i.e. the one seen in the 1st video clip of the pair), without any  
+association with other seen persons. - best (non-hesitant) case</font></td>  
+    <td valign="top" width="20%"><font size="2">
+11&nbsp;- ... when the face is not associated with one individual, but rather  
+with several individuals, one of which is the correct one. - good (hesitating)  
+case</font></td>
+    <td valign="top" width="20%"><font size="2"><font color="#ff0000">
+01</font>&nbsp;- ... when&nbsp; the face is associated with someone else - worst  
+case</font>
+      <p><font size="2">
+02&nbsp;- ... when the face is associated with several individuals (none of  
+which is correct) -&nbsp; wrong but hesitating case</font></p>  
+    </td>
+    <td valign="top" width="20%"><font size="2">
+00 - ... when&nbsp; the face is not associated with any of the seen faces - not  
+bad case</font></td>  
+  </tr>
+  <tr>
+    <td valign="top" width="20%"><font size="2">S10: neuron corresponding to the correct
+      person's ID fired (+1), while all other neurons remained at rest (-1).
+      This is the best case performance: no hesitation in saying the person's
+      name from a single video frame.</font></td>
+    <td valign="top" width="20%"><font size="2">S11: neuron corresponding to the correct  
+      person's ID fired (+1), but there were some other neurons (at least one)  
+      which also fired. This "hesitating" performance can also be  
+      considered good, as it can be taken into account whn&nbsp; making the  
+      final decision based on the average (or majority) of decisions over  
+      several video frames. This result can also be used to disregard the frame  
+      as "confusing".</font>  
+      <p></p></td>
+    <td valign="top" width="20%"><font size="2">S01: neuron corresponding to the correct  
+      person's ID did not fire (-1), while another name tag neuron corresponding  
+      to a different person fired (+1). This is the worst case result. It  
+      however is&nbsp; not always bad either. First , when this happens often  
+      there are other neurons&nbsp; which fire too, indicating the inconsistent  
+      decision - this is denoted as S02 result. Second, unless&nbsp; this  
+      results persists within several consecutive frames (which in most cases it  
+      is not - see the log file) it can also be identified as invalid result and  
+      thus be discarded.</font></td>  
+    <td valign="top" width="20%"><font size="2">S00: none of the name tag neurons fired. This
+      result can also be considered as a good one, as it indicates that the
+      network does not recognize anybody. This is, in fact, what we want the
+      network to produce when it examines a face which has not been previously
+      seen or when it examines part of the video image which has been
+      erroneously classified as a face by the video processing modules, which,
+      as our experiments show, happens too.</font>
+      <p></p></td>
+  </tr>
+</tbody></table>
+
+<hr>
+
+<!------------------------------------------------ end of header ---------------------------------------------------------------------------><font size="2">&nbsp;   
+<table border="0" cellpadding="0" cellspacing="0" width="750">  
+    <tbody><tr>
+      <td width="25%">&nbsp; </td>
+       <td width="75%">      <p align="right">&nbsp;<font size="1"><a href="http://www.perceptual-vision.com/">www.perceptual-vision.com</a> (<a href="">www.perceptual-vision.com</a>)<br>
+
+Created: 10.XII.2004. 
+      Last updated: <i>2005-XII-6</i>.&nbsp;<br>   
+      Copyright © 20</font><font size="1">04</font><font size="1"><font size="2">-2005&nbsp; <a href="http://iit-iti.nrc-cnrc.gc.ca/r-d/cv-vi_e.html"><br>
+      Computational Video Group</a>, <a href="http://iit-iti.nrc-cnrc.gc.ca/">IIT-ITI</a>,              
+      <a href="http://www.nrc-cnrc.gc.ca/">NRC-CNRC</a><br>
+&nbsp;Project Leader: <a href="http://iit-iti.nrc-cnrc.gc.ca/personnel/gorodnichy_dmitry_e.html">Dmitry Gorodnichy</a></font></font></p><font size="1"><font size="2"> 
+      </font></font></td>
+    </tr>
+</tbody></table>
+
+      </font></td>
+    </tr>
+</tbody></table>
+
+      
+      
+      <table border="0" cellpadding="2" cellspacing="0" width="100%">
+      </table>
+
+    
+
+</body></html>
