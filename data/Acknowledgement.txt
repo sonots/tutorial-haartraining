@@ -1,4 +1,5 @@
 Thanks!
-Negative Images - http://face.urtho.net/
-The UMIST Face Database - http://images.ee.umist.ac.uk/danny/database.html
-NRC-IIT Facial Video Database - http://synapse.vit.iit.nrc.ca/db/video/faces/cvglab/avi/
+[1] Negative Images - http://face.urtho.net/
+[2] The UMIST Face Database - http://images.ee.umist.ac.uk/danny/database.html
+Daniel B Graham and Nigel M Allinson. Face Recognition: From Theory to Applications, NATO ASI Series F, Computer and Systems Sciences, Vol. 163. H. Wechsler, P. J. Phillips, V. Bruce, F. Fogelman-Soulie and T. S. Huang (eds), pp 446-456, 1998.
+[3] NRC-IIT Facial Video Database - http://synapse.vit.iit.nrc.ca/db/video/faces/cvglab/avi/
