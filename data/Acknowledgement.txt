@@ -12,3 +12,14 @@ URL: http://www.perceptual-vision.com/db/video/faces/cvglab/
 Cite: 
 Dmitry O. Gorodnichy  Video-based framework for face recognition in video. 
 Second Workshop on Face Processing in Video (FPiV'05) in Proceedings of Second Canadian Conference on Computer and Robot Vision (CRV'05), pp. 330-338, Victoria, BC, Canada, 9-11 May, 2005.
+[4] CMU-MIT Face Test Set
+License: Please give appropriate acknowledgements when you use these test sets.
+URL: http://www.cs.cmu.edu/~har
+@inproceedings{Schneiderman_2000_3294,
+   author = "Henry Schneiderman and Takeo Kanade",
+   title = "A Statistical Model for 3D Object Detection Applied to Faces and Cars",
+   booktitle = "IEEE Conference on Computer Vision and Pattern Recognition",
+   month = "June",
+   year = "2000",
+   publisher = "IEEE"
+}
