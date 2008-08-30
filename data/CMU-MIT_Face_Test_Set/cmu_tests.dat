@@ -1,0 +1,117 @@
+../../data/CMU-MIT_Face_Test_Set/test/aerosmith-double.png 5 85 129 40 41 107 24 35 37 162 102 32 37 229 47 32 40 276 118 33 39
+../../data/CMU-MIT_Face_Test_Set/test/baseball.png 1 80 32 43 49
+../../data/CMU-MIT_Face_Test_Set/test/blues-double.png 4 100 32 34 42 178 71 29 42 266 51 30 37 354 30 32 44
+../../data/CMU-MIT_Face_Test_Set/test/boat.png 2 330 225 30 30 487 224 33 31
+../../data/CMU-MIT_Face_Test_Set/test/book.png 2 90 378 24 31 168 372 25 25
+../../data/CMU-MIT_Face_Test_Set/test/cnn1085.png 1 122 74 57 61
+../../data/CMU-MIT_Face_Test_Set/test/cnn1160.png 2 70 61 15 16 156 56 14 15
+../../data/CMU-MIT_Face_Test_Set/test/cnn1260.png 1 105 66 78 94
+../../data/CMU-MIT_Face_Test_Set/test/cnn1630.png 1 147 70 23 23
+../../data/CMU-MIT_Face_Test_Set/test/cnn1714.png 1 102 94 71 81
+../../data/CMU-MIT_Face_Test_Set/test/cnn2020.png 1 105 65 89 100
+../../data/CMU-MIT_Face_Test_Set/test/cnn2221.png 1 119 62 45 47
+../../data/CMU-MIT_Face_Test_Set/test/cnn2600.png 1 136 70 51 69
+../../data/CMU-MIT_Face_Test_Set/test/ds9.png 8 43 121 35 44 99 32 36 38 156 99 32 41 210 43 28 40 293 69 33 44 397 155 35 44 474 111 28 38 563 129 33 39
+../../data/CMU-MIT_Face_Test_Set/test/eugene.png 1 102 185 78 79
+../../data/CMU-MIT_Face_Test_Set/test/hendrix1-bigger.png 25 124 68 39 52 66 366 21 25 125 359 29 37 169 367 19 28 52 635 24 24 119 618 28 35 168 622 21 27 329 108 21 27 385 75 21 27 455 86 28 33 325 378 19 23 383 343 22 28 453 351 26 34 331 647 24 25 380 621 23 29 457 612 25 36 590 112 24 27 644 91 23 28 712 83 26 34 580 365 32 38 645 350 34 36 701 365 27 28 581 626 28 33 645 608 30 36 707 621 23 28
+../../data/CMU-MIT_Face_Test_Set/test/hendrix2.png 1 39 55 46 55
+../../data/CMU-MIT_Face_Test_Set/test/henry.png 4 91 104 282 247 438 53 114 108 457 221 75 83 349 369 93 89
+../../data/CMU-MIT_Face_Test_Set/test/judybats.png 5 36 389 57 50 131 224 134 169 371 407 29 23 428 330 68 76 631 439 39 35
+../../data/CMU-MIT_Face_Test_Set/test/kaari-stef.png 2 56 95 87 90 285 102 81 66
+../../data/CMU-MIT_Face_Test_Set/test/kaari1.png 1 74 133 100 104
+../../data/CMU-MIT_Face_Test_Set/test/kaari2.png 1 110 38 69 86
+../../data/CMU-MIT_Face_Test_Set/test/knex0.png 1 56 73 59 63
+../../data/CMU-MIT_Face_Test_Set/test/knex37.png 1 174 74 40 31
+../../data/CMU-MIT_Face_Test_Set/test/lacrosse.png 1 87 38 36 36
+../../data/CMU-MIT_Face_Test_Set/test/life2100.png 3 58 149 22 21 106 197 24 26 146 182 24 33
+../../data/CMU-MIT_Face_Test_Set/test/life7422.png 1 69 68 28 30
+../../data/CMU-MIT_Face_Test_Set/test/mom-baby.png 2 54 53 66 51 129 165 52 52
+../../data/CMU-MIT_Face_Test_Set/test/music-groups-double.png 8 28 137 31 39 75 112 30 34 134 84 31 37 251 87 32 31 329 243 46 51 466 213 36 35 423 312 48 58 562 241 38 48
+../../data/CMU-MIT_Face_Test_Set/test/next.png 8 70 12 24 30 138 27 22 28 215 49 18 26 284 44 23 30 350 24 22 28 87 158 25 25 180 138 27 24 272 144 23 27
+../../data/CMU-MIT_Face_Test_Set/test/original1.png 8 29 41 22 25 118 48 18 21 89 105 21 19 159 73 19 23 197 111 19 25 317 55 17 20 322 82 21 30 376 33 20 20
+../../data/CMU-MIT_Face_Test_Set/test/original2.png 7 54 356 54 56 198 339 56 64 355 245 55 68 562 201 58 72 469 112 52 53 280 166 60 60 131 181 53 56
+../../data/CMU-MIT_Face_Test_Set/test/pace-university-double.png 8 13 98 34 42 161 85 32 44 240 124 38 36 360 88 38 42 457 98 43 43 571 101 39 43 689 91 42 50 780 114 36 40
+../../data/CMU-MIT_Face_Test_Set/test/people.png 12 80 93 40 34 206 101 31 34 265 101 28 28 332 124 21 25 410 111 23 29 475 113 27 31 539 91 28 40 621 124 34 25 201 211 35 38 332 244 28 35 502 250 33 38 609 233 28 32
+../../data/CMU-MIT_Face_Test_Set/test/plays.png 4 25 571 94 103 326 87 32 35 400 109 28 29 485 91 24 25
+../../data/CMU-MIT_Face_Test_Set/test/puneet.png 14 54 132 26 22 124 110 23 25 120 154 27 29 158 144 23 27 203 148 23 23 245 142 23 22 278 132 19 23 319 121 21 23 291 167 21 25 352 151 21 25 376 151 20 21 397 122 19 22 415 138 23 24 484 129 25 29
+../../data/CMU-MIT_Face_Test_Set/test/shumeet.png 1 177 95 47 42
+../../data/CMU-MIT_Face_Test_Set/test/tammy.png 1 109 148 40 41
+../../data/CMU-MIT_Face_Test_Set/test/voyager.png 9 117 37 25 29 186 48 22 27 298 58 20 21 384 26 26 23 251 190 26 26 302 176 22 21 138 431 29 35 246 458 29 27 340 433 29 28
+../../data/CMU-MIT_Face_Test_Set/test/voyager2.png 9 54 142 49 61 166 158 48 53 344 51 48 54 526 101 50 53 262 219 46 49 430 192 42 51 150 278 52 55 338 314 50 52 521 302 45 55
+../../data/CMU-MIT_Face_Test_Set/test-low/Argentina.png 11 36 56 29 31 130 49 30 30 232 50 30 28 334 37 27 30 437 57 25 30 527 46 25 31 49 208 28 28 150 205 31 27 287 213 25 35 406 204 26 31 541 201 27 29
+../../data/CMU-MIT_Face_Test_Set/test-low/Arsenal.png 16 73 53 22 27 55 95 23 33 130 39 25 36 189 57 22 29 229 84 26 28 275 63 26 36 314 36 25 31 371 31 26 32 438 17 25 33 169 177 29 39 245 173 27 33 356 152 25 29 456 163 26 33 535 178 29 40 603 182 17 36 557 52 15 25
+../../data/CMU-MIT_Face_Test_Set/test-low/Brazil.png 11 24 63 24 30 112 64 21 33 209 43 23 28 328 41 24 24 448 48 21 30 532 61 25 32 86 164 25 37 209 187 24 33 337 179 24 29 469 190 24 28 591 191 27 31
+../../data/CMU-MIT_Face_Test_Set/test-low/Colombia.png 11 44 76 25 28 154 63 26 28 265 50 25 25 385 56 23 25 502 69 26 30 586 70 27 27 110 221 29 27 226 211 27 26 333 172 28 31 447 219 30 31 555 216 26 30
+../../data/CMU-MIT_Face_Test_Set/test-low/Ecuador.png 12 79 79 23 25 176 79 21 28 277 75 26 24 373 74 26 30 457 79 23 31 538 86 24 25 3 181 26 32 109 207 28 30 208 223 24 27 326 212 27 32 457 210 26 25 579 231 23 28
+../../data/CMU-MIT_Face_Test_Set/test-low/England.png 11 21 56 24 26 108 73 28 30 210 68 25 29 312 52 27 31 423 42 27 30 541 70 24 29 28 227 25 30 149 244 26 27 256 238 27 37 404 245 30 35 538 246 28 33
+../../data/CMU-MIT_Face_Test_Set/test-low/Germany.png 11 23 61 27 30 126 81 24 26 236 52 29 31 359 65 24 28 461 74 24 24 572 81 26 30 30 231 26 34 156 229 26 36 302 228 30 34 447 245 29 31 589 237 27 34
+../../data/CMU-MIT_Face_Test_Set/test-low/USA.png 14 51 78 25 26 163 87 24 27 272 90 21 29 378 92 21 24 469 79 22 26 555 75 22 29 35 255 22 27 142 251 21 25 261 234 24 27 397 237 25 26 509 235 23 24 58 351 37 61 122 358 39 42 191 362 44 51
+../../data/CMU-MIT_Face_Test_Set/test-low/albert.png 1 62 24 35 34
+../../data/CMU-MIT_Face_Test_Set/test-low/board.png 9 194 167 28 34 218 258 31 36 235 327 32 39 306 188 37 45 304 258 27 39 311 319 34 46 378 191 33 40 375 262 38 41 376 317 36 39
+../../data/CMU-MIT_Face_Test_Set/test-low/brian.png 1 50 32 31 32
+../../data/CMU-MIT_Face_Test_Set/test-low/cards-perp-sml.png 10 66 152 25 27 158 151 20 27 232 153 22 21 101 82 21 23 206 87 22 25 72 28 21 29 145 27 21 23 227 23 24 28 88 278 20 24 160 282 17 21
+../../data/CMU-MIT_Face_Test_Set/test-low/frisbee.png 5 55 69 27 30 99 94 32 32 185 99 25 26 220 98 30 30 142 34 33 27
+../../data/CMU-MIT_Face_Test_Set/test-low/kymberly.png 1 40 34 48 43
+../../data/CMU-MIT_Face_Test_Set/test-low/me.png 1 139 34 25 33
+../../data/CMU-MIT_Face_Test_Set/test-low/oksana1.png 4 109 65 24 35 164 73 20 27 197 62 17 28 131 65 21 27
+../../data/CMU-MIT_Face_Test_Set/test-low/soccer.png 15 18 64 22 28 62 62 22 30 116 65 22 26 180 70 25 26 258 52 25 28 339 71 25 26 420 59 23 28 505 74 23 22 594 58 25 30 107 206 27 33 182 222 27 25 259 214 26 24 362 236 26 33 447 236 22 26 528 215 25 29
+../../data/CMU-MIT_Face_Test_Set/test-low/tommyrw.png 1 92 78 29 25
+../../data/CMU-MIT_Face_Test_Set/test-low/torrance.png 2 135 73 36 41 197 85 30 29
+../../data/CMU-MIT_Face_Test_Set/test-low/tp-reza-girosi.png 3 24 47 26 30 85 57 30 32 150 28 28 34
+../../data/CMU-MIT_Face_Test_Set/test-low/tp.png 1 25 52 46 45
+../../data/CMU-MIT_Face_Test_Set/test-low/trek-trio.png 3 22 125 22 25 112 54 38 43 222 124 26 24
+../../data/CMU-MIT_Face_Test_Set/test-low/trekcolr.png 3 33 32 37 44 82 22 35 43 128 23 26 26
+../../data/CMU-MIT_Face_Test_Set/newtest/J-L_Picard.Baldy.png 1 179 73 28 46
+../../data/CMU-MIT_Face_Test_Set/newtest/addams-family.png 7 86 514 33 38 145 411 41 47 334 187 39 36 430 158 31 39 721 97 37 46 664 398 35 34 742 564 41 34
+../../data/CMU-MIT_Face_Test_Set/newtest/aeon1a.png 1 179 115 108 106
+../../data/CMU-MIT_Face_Test_Set/newtest/audrey1.png 1 135 122 81 75
+../../data/CMU-MIT_Face_Test_Set/newtest/audrey2.png 1 61 171 133 121
+../../data/CMU-MIT_Face_Test_Set/newtest/audrybt1.png 1 134 46 33 32
+../../data/CMU-MIT_Face_Test_Set/newtest/bksomels.png 1 173 92 68 78
+../../data/CMU-MIT_Face_Test_Set/newtest/bttf206.png 1 226 126 85 96
+../../data/CMU-MIT_Face_Test_Set/newtest/bttf301.png 6 71 33 41 47 143 104 34 34 215 111 37 36 334 52 37 44 462 81 35 37 512 132 38 37
+../../data/CMU-MIT_Face_Test_Set/newtest/bwolen.png 1 17 30 28 27
+../../data/CMU-MIT_Face_Test_Set/newtest/cfb.png 1 57 56 61 59
+../../data/CMU-MIT_Face_Test_Set/newtest/clapton.png 1 181 103 75 71
+../../data/CMU-MIT_Face_Test_Set/newtest/class57.png 57 105 511 30 33 116 363 30 29 169 309 26 27 196 273 26 26 153 239 24 26 201 195 23 25 227 416 31 37 246 365 34 30 283 310 30 27 274 219 28 30 352 191 22 24 383 235 26 25 350 301 26 31 357 368 29 32 347 440 32 29 290 501 34 38 484 493 33 33 418 357 30 31 486 354 32 32 453 297 27 28 482 254 26 26 480 171 24 25 581 329 33 36 612 417 30 31 673 501 35 38 815 511 36 31 972 498 33 33 1134 518 34 36 1012 433 34 31 1172 429 28 26 1093 366 32 31 971 383 28 32 845 423 32 34 741 433 31 29 678 390 30 25 713 310 31 33 797 391 29 34 842 359 30 30 952 317 27 27 1061 328 31 27 986 267 24 27 1113 282 28 30 1046 218 27 26 795 285 29 24 830 263 24 23 883 255 21 24 946 223 26 25 1002 197 24 25 882 193 24 22 827 190 27 28 735 249 28 24 652 278 26 32 576 264 28 29 539 220 25 27 601 180 24 27 635 232 24 25 709 176 25 24
+../../data/CMU-MIT_Face_Test_Set/newtest/cpd.png 1 157 127 99 113
+../../data/CMU-MIT_Face_Test_Set/newtest/crimson.png 1 205 390 212 211
+../../data/CMU-MIT_Face_Test_Set/newtest/divinci-man1.png 1 283 194 31 30
+../../data/CMU-MIT_Face_Test_Set/newtest/er.png 6 122 59 25 23 70 136 29 24 145 266 24 29 260 236 28 30 342 47 22 23 407 95 20 37
+../../data/CMU-MIT_Face_Test_Set/newtest/ew-courtney-david.png 2 84 68 43 44 126 58 55 54
+../../data/CMU-MIT_Face_Test_Set/newtest/ew-friends.png 6 123 74 23 19 157 62 20 18 199 69 20 21 126 122 22 23 163 131 22 23 212 119 19 24
+../../data/CMU-MIT_Face_Test_Set/newtest/gigi.png 1 117 100 66 65
+../../data/CMU-MIT_Face_Test_Set/newtest/gpripe.png 2 13 24 30 34 66 33 48 57
+../../data/CMU-MIT_Face_Test_Set/newtest/herbie-hancock.png 1 277 366 88 104
+../../data/CMU-MIT_Face_Test_Set/newtest/jackson.png 1 237 178 75 70
+../../data/CMU-MIT_Face_Test_Set/newtest/john.coltrane.png 1 84 139 112 141
+../../data/CMU-MIT_Face_Test_Set/newtest/karen-and-rob.png 2 89 209 37 34 195 45 41 38
+../../data/CMU-MIT_Face_Test_Set/newtest/larroquette.png 9 77 118 27 20 115 103 21 26 135 156 21 21 183 135 23 23 222 100 20 19 263 148 23 22 333 157 25 18 378 123 18 18 104 223 23 25
+../../data/CMU-MIT_Face_Test_Set/newtest/lawoman.png 4 50 96 37 43 115 123 34 44 176 124 29 39 245 148 36 40
+../../data/CMU-MIT_Face_Test_Set/newtest/life-cover.png 1 268 330 83 99
+../../data/CMU-MIT_Face_Test_Set/newtest/life-dreams.png 1 898 339 17 21
+../../data/CMU-MIT_Face_Test_Set/newtest/madaboutyou.png 2 204 282 32 37 396 283 35 39
+../../data/CMU-MIT_Face_Test_Set/newtest/married.png 3 41 101 30 33 171 48 35 35 296 62 33 34
+../../data/CMU-MIT_Face_Test_Set/newtest/mickymouse-self-p.png 2 418 264 28 28 546 311 92 108
+../../data/CMU-MIT_Face_Test_Set/newtest/mona-lisa.png 1 193 157 87 94
+../../data/CMU-MIT_Face_Test_Set/newtest/natalie1.png 1 113 194 355 333
+../../data/CMU-MIT_Face_Test_Set/newtest/nens.png 14 37 163 23 21 90 169 22 18 142 171 24 21 189 165 24 19 169 102 20 17 120 110 20 18 62 105 22 24 16 87 24 22 47 37 23 22 96 29 22 20 149 15 22 23 200 25 23 20 236 112 21 19 152 236 22 23
+../../data/CMU-MIT_Face_Test_Set/newtest/newsradio.png 8 98 265 45 57 221 188 41 43 316 262 36 48 386 215 49 45 315 134 44 43 234 89 37 39 59 140 36 34 141 173 39 41
+../../data/CMU-MIT_Face_Test_Set/newtest/our-cards.png 4 550 48 29 31 113 787 38 36 581 285 32 37 103 998 34 41
+../../data/CMU-MIT_Face_Test_Set/newtest/patio.png 1 131 47 33 42
+../../data/CMU-MIT_Face_Test_Set/newtest/police.png 3 146 233 56 61 231 235 66 59 346 221 58 66
+../../data/CMU-MIT_Face_Test_Set/newtest/rehg-thanksgiving-1994.png 7 122 92 23 28 165 161 26 31 222 87 20 20 298 123 22 24 296 76 23 22 355 91 19 21 412 98 24 24
+../../data/CMU-MIT_Face_Test_Set/newtest/sarah4.png 1 103 154 125 125
+../../data/CMU-MIT_Face_Test_Set/newtest/sarah_live_2.png 1 46 61 391 371
+../../data/CMU-MIT_Face_Test_Set/newtest/seinfeld.png 4 102 51 26 28 162 64 27 25 238 60 27 23 328 48 23 29
+../../data/CMU-MIT_Face_Test_Set/newtest/speed.png 1 37 45 28 28
+../../data/CMU-MIT_Face_Test_Set/newtest/tori-crucify.png 1 147 158 66 68
+../../data/CMU-MIT_Face_Test_Set/newtest/tori-entweekly.png 1 188 136 122 135
+../../data/CMU-MIT_Face_Test_Set/newtest/tori-live3.png 1 201 47 49 53
+../../data/CMU-MIT_Face_Test_Set/newtest/tress-photo-2.png 1 153 136 15 16
+../../data/CMU-MIT_Face_Test_Set/newtest/tress-photo.png 1 173 146 27 25
+../../data/CMU-MIT_Face_Test_Set/newtest/u2-cover.png 1 185 207 112 68
+../../data/CMU-MIT_Face_Test_Set/newtest/waynesworld2.png 2 129 90 33 44 254 67 36 33
+../../data/CMU-MIT_Face_Test_Set/newtest/window.png 2 124 49 24 27 214 49 29 28
+../../data/CMU-MIT_Face_Test_Set/newtest/wxm.png 1 39 30 30 30
+../../data/CMU-MIT_Face_Test_Set/newtest/ysato.png 1 77 74 43 61
