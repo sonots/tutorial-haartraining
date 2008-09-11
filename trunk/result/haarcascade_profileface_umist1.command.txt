@@ -1,0 +1,6 @@
+#my $cmd = './createsamples -w 18 -h 22 -maxxangle 0.39 -maxyangle 0 -maxzangle 0.78 -maxidev 40 -bgcolor 0 -bgthresh 0';
+#my $totalnum = 10000;
+#my $cmd = './createsamples -maxxangle 0.39 -maxyangle 0 -maxzangle 0.78 -maxidev 40 -bgcolor 0 -bgthresh 0';
+#my $totalnum = 1000;
+./haartraining -data haarcascade_profileface_umist1 -vec umist_samples.vec -bg negatives.dat -nstages 20 -minhitrate 0.999 -maxfalsealarm 0.5 -npos 10000 -nneg `cat negatives.dat | wc -l` -w 18 -h 22 -sym -mem 800 -mode ALL
+./performance -data haarcascade_profileface_umist1.xml -info umist_tests.dat -ni -w 18 -h 22
