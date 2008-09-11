@@ -12,20 +12,24 @@ use strict;
 # Date  : 06/02/2007
 # Date  : 03/12/2006
 #########################################################################
-my $cmd = './createsamples.exe -w 20 -h 20 -maxxangle 0.6 -maxyangle 0 -maxzangle 0.3 -maxidev 100 -bgcolor 0 -bgthresh 0';
+my $cmd = './createsamples -bgcolor 0 -bgthresh 0 -maxxangle 1.1 -maxyangle 1.1 maxzangle 0.5 -maxidev 40 -w 20 -h 20';
 my $totalnum = 7000;
 my $tmpfile  = 'tmp';
 
 if ($#ARGV < 2) {
     print "Usage: perl createtrainsamples.pl\n";
-    print "  <positives_collection_file_name>\n";
-    print "  <negatives_collection_file_name>\n";
-    print "  <output_dir_name>\n";
+    print "  <positives_collection_filename>\n";
+    print "  <negatives_collection_filename>\n";
+    print "  <output_dirname>\n";
+    print "  [<totalnum = " . $totalnum . ">]\n";
+    print "  [<createsample_command_options = '" . $cmd . "'>]\n";
     exit;
 }
 my $positive  = $ARGV[0];
 my $negative  = $ARGV[1];
 my $outputdir = $ARGV[2];
+$totalnum     = $ARGV[3] if ($#ARGV > 2);
+$cmd          = $ARGV[4] if ($#ARGV > 3);
 
 open(POSITIVE, "< $positive");
 my @positives = <POSITIVE>;
