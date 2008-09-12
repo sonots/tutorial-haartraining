@@ -40,7 +40,8 @@ my @negatives = <NEGATIVE>;
 close(NEGATIVE);
 
 # number of generated images from one image so that total will be $totalnum
-my $num = int($totalnum / $#positives + .5);
+my $numfloor  = int($totalnum / $#positives);
+my $numremain = $totalnum - $numfloor * $#positives;
 
 # Get the directory name of positives
 my $first = $positives[0];
@@ -53,7 +54,10 @@ while ($first ne $last) {
 my $imgdir = $first;
 my $imgdirlen = length($first);
 
-foreach my $img (@positives) {
+for (my $k = 0; $k < $#positives; $k++ ) {
+    my $img = $positives[$k];
+    my $num = ($k < $numremain) ? $numfloor + 1 : $numfloor;
+
     # Pick up negative images randomly
     my @localnegatives = ();
     for (my $i = 0; $i < $num+1; $i++) {
