@@ -9,6 +9,7 @@ use strict;
 #  ex) perl createtrainsamples.pl positives.dat negatives.dat samples
 #
 # Author: Naotoshi Seo
+# Date  : 09/12/2008
 # Date  : 06/02/2007
 # Date  : 03/12/2006
 #########################################################################
