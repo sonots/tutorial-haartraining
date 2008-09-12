@@ -3,12 +3,12 @@ find ../../data/umist_cropped/ -name '*.bgm' > umist_positives.dat
 
 # 0.78 == 45 degree, 0.39 == 45/2 degree, 0 digree for y because UMIST database is already varied in the direction
 perl createtrainsamples.pl umist_positives.dat negatives.dat umist_samples \
-    10000 './createsamples -bgcolor 0 -bgthresh 0 -maxxangle 0.39 -maxyangle 0 -maxzangle 0.78 -maxidev 40 -w 18 -h 22'
+  10000 './createsamples -bgcolor 0 -bgthresh 0 -maxxangle 0.39 -maxyangle 0 -maxzangle 0.78 -maxidev 40 -w 18 -h 22'
 find umist_samples/ -name '*.vec' > umist_samples.dat
 ./mergevec umist_samples.dat umist_samples.vec
 
-perl createtrainsamples.pl umist_positives.dat negatives.dat umist_tests \
-    1000 './createsamples -bgcolor 0 -bgthresh 0 -maxxangle 0.39 -maxyangle 0 -maxzangle 0.78 -maxidev 40'
+perl createtestsamples.pl umist_positives.dat negatives.dat umist_tests \
+  1000 './createsamples -bgcolor 0 -bgthresh 0 -maxxangle 0.39 -maxyangle 0 -maxzangle 0.78 -maxidev 40'
 find umist_tests/ -name 'info.dat' -exec cat \{\} \; > umist_tests.dat
 
 # -sym generate flipped images in left-right, thus, -sym helps for profile face too
