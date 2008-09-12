@@ -12,7 +12,9 @@ perl createtrainsamples.pl umist_positives.dat negatives.dat umist_tests \
 find umist_tests/ -name 'info.dat' -exec cat \{\} \; > umist_tests.dat
 
 # -sym generate flipped images in left-right, thus, -sym helps for profile face too
-./haartraining -data haarcascade_profileface_umist1 -vec umist_samples.vec -bg negatives.dat -nstages 20 -nsplits 2 \
-    -minhitrate 0.999 -maxfalsealarm 0.5 -npos 10000 -nneg `cat negatives.dat | wc -l` -w 18 -h 22 -mem 800 -mode ALL -sym
+./haartraining -data haarcascade_profileface_umist1 -vec umist_samples.vec \
+  -bg negatives.dat -nstages 20 -nsplits 2 -minhitrate 0.999 -maxfalsealarm 0.5 \
+  -npos 10000 -nneg `cat negatives.dat | wc -l` -mem 800 -mode ALL \
+  -w 18 -h 22 -sym
 ./performance -data haarcascade_profileface_umist1.xml -info umist_tests.dat -ni
 # took 5 days

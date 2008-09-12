@@ -11,7 +11,9 @@
 #find umist_tests/ -name 'info.dat' -exec cat \{\} \; > umist_tests.dat
 
 # -maxtreesplits 4
-./haartraining -data haarcascade_profileface_umist1 -vec umist_samples.vec -bg negatives.dat -nstages 20 -nsplits 2 \
-    -minhitrate 0.999 -maxfalsealarm 0.5 -npos 10000 -nneg `cat negatives.dat | wc -l` -w 18 -h 22 -mem 800 -mode ALL -sym -maxtreesplits 4
+./haartraining -data haarcascade_profileface_umist1 -vec umist_samples.vec \
+  -bg negatives.dat -nstages 20 -nsplits 2 -minhitrate 0.999 -maxfalsealarm 0.5 \
+  -npos 10000 -nneg `cat negatives.dat | wc -l` -mem 800 -mode ALL \
+  -w 18 -h 22 -sym -maxtreesplits 4
 ./peharformance -data haarcascade_profileface_umist1.xml -info umist_tests.dat -ni
 # training took 2 weeks
