@@ -12,6 +12,6 @@
 #    1000 './createsamples -bgcolor 0 -bgthresh 0 -maxxangle 0.05 -maxyangle 0.05 -maxzangle 0.05 -maxidev 10'
 #find pie_tests/ -name 'info.dat' -exec cat \{\} \; > pie_tests.dat
 
-./haartraining -data haarcascade_frontalface_pie3 -vec pie_samples.vec -bg negatives.dat -nstages 20 -nsplits 2 -minhitrate 0.995 -maxfalsealarm 0.5 -npos 10000 -nneg `cat negatives.dat | wc -l` -w 18 -h 20 -mem 800 -mode ALL -nonsym
-./performance -data haarcascade_frontalface_pie3.xml -info pie_tests.dat -ni
+./haartraining -data haarcascade_frontalface_pie4 -vec pie_samples.vec -bg negatives.dat -nstages 20 -nsplits 2 -minhitrate 0.995 -maxfalsealarm 0.5 -npos 10000 -nneg `cat negatives.dat | wc -l` -w 18 -h 20 -mem 800 -mode ALL -nonsym
+./performance -data haarcascade_frontalface_pie4.xml -info pie_tests.dat -ni
 
