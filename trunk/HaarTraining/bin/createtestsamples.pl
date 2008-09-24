@@ -6,10 +6,11 @@ use strict;
 # (create many many test samples from many images applying distortions)
 #
 #  perl createtestsamples.pl <positives.dat> <negatives.dat> <output_dir>
+#      [<totalnum = 7000>] [<createsample_command_options = ./createsamples -w 20 -h 20...>]
 #  ex) perl createtestsamples.pl positives.dat negatives.dat tests
 #
 # Author: Naotoshi Seo
-# Date  : 09/12/2008
+# Date  : 09/12/2008 Add <totalnum> and <createsample_command_options> options
 # Date  : 06/02/2007
 # Date  : 03/12/2006
 #########################################################################
